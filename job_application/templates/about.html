@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-4 mb-4">About Us</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Welcome to Our Job Application Portal</h5>
+        <p class="card-text">
+            We are committed to finding the best talent for our organization. 
+            Our streamlined application process ensures that your information 
+            is securely stored and promptly reviewed by our HR team.
+        </p>
+        
+        <h6 class="mt-4">What Makes Us Different?</h6>
+        <ul>
+            <li>Fast application processing</li>
+            <li>Immediate email confirmation</li>
+            <li>Secure data handling</li>
+            <li>Transparent hiring process</li>
+        </ul>
+        
+        <a href="{% url 'index' %}" class="btn btn-primary mt-3">
+            Apply Now
+        </a>
+    </div>
+</div>
+{% endblock %}
